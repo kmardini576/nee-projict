@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الرئيسية | دليل فعاليات المدينة</title>
+<!-- Bootstrap (RTL) عبر CDN لدعم العربية -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<!-- خط Cairo الواضح وسهل القراءة -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body data-page="index.html">
+<!-- Header: الشعار + قائمة التنقل -->
+<header>
+<nav class="navbar navbar-expand-md bg-white shadow-sm">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html"><img src="assets/img/logo.svg" alt="شعار الدليل" width="40" height="40">دليل فعاليات المدينة</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="القائمة"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li><li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li><li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li><li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li></ul></div>
+</div>
+</nav>
+</header>
+<!-- Main: المحتوى -->
+<main>
+
+<!-- القسم 1: فعاليات بارزة هذا الأسبوع (سلايدر) -->
+<section class="container mt-4"><h2 class="section-title">فعاليات بارزة هذا الأسبوع</h2>
+<div id="featured" class="carousel slide" data-bs-ride="carousel"><div class="carousel-inner" id="featuredInner"></div>
+<button class="carousel-control-prev" type="button" data-bs-target="#featured" data-bs-slide="prev" aria-label="السابق"><span class="carousel-control-prev-icon"></span></button>
+<button class="carousel-control-next" type="button" data-bs-target="#featured" data-bs-slide="next" aria-label="التالي"><span class="carousel-control-next-icon"></span></button></div></section>
+<!-- القسم 2: تصنيفات سريعة -->
+<section class="container mt-5"><h2 class="section-title">تصنيفات سريعة</h2><div class="d-flex flex-wrap gap-2"><a class="badge badge-cat fs-6 text-decoration-none" href="events.html?cat=ثقافة">ثقافة</a><a class="badge badge-cat fs-6 text-decoration-none" href="events.html?cat=رياضة">رياضة</a><a class="badge badge-cat fs-6 text-decoration-none" href="events.html?cat=موسيقى">موسيقى</a><a class="badge badge-cat fs-6 text-decoration-none" href="events.html?cat=عائلي">عائلي</a></div></section>
+<!-- القسم 3: أحدث الفعاليات -->
+<section class="container mt-5"><h2 class="section-title">أحدث الفعاليات</h2><div class="row g-4" id="latest"></div></section>
+<!-- القسم 4: المشاركون في المشروع (يُستبدل بالأسماء والأرقام الحقيقية) -->
+<section class="container mt-5"><div class="team-box p-4 rounded-3"><h2 class="h4">المشاركون في المشروع</h2>
+<ul class="mb-0"><li> zain_eddin_305361</li><li></li><li>  </li></ul></div></section>
+
+</main>
+<!-- Footer: التواصل وحقوق النشر -->
+<footer class="site-footer mt-5 py-4">
+<div class="container">
+<div class="row g-3">
+<div class="col-md-6"><h5>تواصل معنا</h5><p class="mb-1">البريد: info@city-events.example</p><p class="mb-0">الهاتف:   0951397651</p></div>
+<div class="col-md-6"><h5>تابعنا</h5><a href="#" class="me-3">فيسبوك</a><a href="#" class="me-3">إنستغرام</a><a href="#">إكس</a></div>
+</div>
+<hr><p class="text-center mb-0">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
